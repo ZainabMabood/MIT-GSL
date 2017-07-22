@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../css/app.css" />
+</head>
+
+<body>
+
+    <h1 class="title centered rcorners1">Bathroom</h1>
+
+
+    <div onclick="housepage()"style="display: block; position: relative; width: 50%;" class="centered">
+        <img class="centered clickable"    src="../../../images/Bathroom.jpg"   width="100%">
+       <h2 class="Caption centered">Bed </h2>
+    </div>
+    <div id="greeting" class="hidden">
+        <img    src="../../../images/Star.png" width="20%" height="20%" left:"20%" >
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+
+function Star1()
+{
+   var isVisible = document.getElementById("Star1").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star1").style.display = "none";
+            } else {
+                document.getElementById("Star1").style.display = "block";
+            }
+
+}
+
+function Star2()
+{
+   var isVisible = document.getElementById("Star2").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star2").style.display = "none";
+            } else {
+                document.getElementById("Star2").style.display = "block";
+            }
+
+}
+
+
+function Star3()
+{
+   var isVisible = document.getElementById("Star3").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star3").style.display = "none";
+            } else {
+                document.getElementById("Star3").style.display = "block";
+            }
+
+}
+
+
+function Star4()
+{
+   var isVisible = document.getElementById("Star4").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star4").style.display = "none";
+            } else {
+                document.getElementById("Star4").style.display = "block";
+            }
+
+}
+
+
+
+function Star5()
+{
+   var isVisible = document.getElementById("Star5").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star5").style.display = "none";
+            } else {
+                document.getElementById("Star5").style.display = "block";
+            }
+
+}
+
+
+function Star6()
+{
+   var isVisible = document.getElementById("Star6").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star6").style.display = "none";
+            } else {
+                document.getElementById("Star6").style.display = "block";
+            }
+
+}
+
+        function housepage() {
+            var isVisible = document.getElementById("greeting").style.display == "block";
+            if (isVisible) {
+                document.getElementById("greeting").style.display = "none";
+            } else {
+                document.getElementById("greeting").style.display = "block";
+            }
+        }
+        function iconclick() {
+            localStorage.score = 1;
+            location.href = "level2.html"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="../../../css/app.css" />
+</head>
+
+<body>
+    <h1 class="Roomtitle centered  ">Bedroom</h1>
+    <div style="display: block; position: relative; width: 40%;" class="centered">
+        <img class="centered" src="../../../images/Bedroom.png" width="100%" height="60%" left="10%">
+
+        <img src="../../../images/Cupboard.png" class="clickable" onclick="Star1()" style="height :29%; width:18%; position: absolute; top: 29%; left: 60%"
+        />
+        <img src="../../../images/bed.png" class="clickable" onclick="Star2()" style="  height :14%; width:39%; position: absolute; top: 42%; left: 26%"
+        />
+        <img src="../../../images/Chair.png" class="clickable" onclick="Star3()" style=" height :19%;  width:14%; position: absolute; top: 53%; left: 85%"
+        />
+         <img src="../../../images/Door.png" class="clickable" onclick="Star4()" style=" height :25%;  width:8%; position: absolute; top: 26%; left: 82%"
+        />
+         <img src="../../../images/Table.png" class="clickable" onclick="Star5()" style="height :13%;  width:17%; position: absolute; top: 51%; left: 75%"
+        />
+
+
+        <h2 id="Instruction" class="Caption rcorners1 "> Touch the items to get a star </h2>
+
+        <img src="../../../images/emptyStars.png" style=" display: block; position: relative;width:100%; height:13%; left:-1%; top: 20%; "
+        />
+ 
+
+
+
+
+        
+        <div id="SilverStar1" >
+            <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 0% " />
+ 
+        </div>
+         
+        <div id="SilverStar2" class=" ">
+            <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 20% " />
+ 
+        </div>
+          
+        <div id="SilverStar3" class=" ">
+            <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 40% " />
+ 
+        </div>
+              
+        <div id="SilverStar4" class=" ">
+            <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 60% " />
+ 
+        </div>
+              
+        <div id="SilverStar5" class=" ">
+            <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 80% " />
+ 
+        </div>
+
+
+
+        <div id="Star1" class="hidden">
+            <img src="../../../images/Star.png" style="width:13%; position: absolute; top: 85%; left: 0%" />
+  
+        </div>
+         
+        <div id="Star2" class="hidden">
+            <img src="../../../images/Star.png" style="  width:13%; position: absolute; top: 85%; left: 20%" />
+ 
+        </div>
+          
+        <div id="Star3" class="hidden">
+            <img src="../../../images/Star.png" style="width:13%; position: absolute; top: 85%; left: 40% " />
+ 
+        </div>
+              
+        <div id="Star4" class="hidden">
+            <img src="../../../images/Star.png" style=" width:13%; position: absolute; top: 85%; left: 60% " />
+ 
+        </div>
+              
+        <div id="Star5" class="hidden">
+            <img src="../../../images/Star.png" style="  width:13%; position: absolute; top: 85%; left: 80% " />
+ 
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <script>
+        function Star1() {
+
+            var audio = new Audio('../../../wav/audiowelcomesong.mp3');
+            audio.play();
+
+         document.getElementById("Instruction").innerHTML = "Cupboard";
+
+            var isVisible = document.getElementById("Star1").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star1").style.display = "none";
+            } else {
+                document.getElementById("Star1").style.display = "block";
+            }
+              
+
+        }
+
+        function Star2() {
+
+  document.getElementById("Instruction").innerHTML = "Bed";
+            var audio = new Audio('../../../wav/audiowelcomesong.mp3');
+            audio.play();
+            var isVisible = document.getElementById("Star2").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star2").style.display = "none";
+            } else {
+                document.getElementById("Star2").style.display = "block";
+            }
+
+        }
+    function Star3() {
+
+          document.getElementById("Instruction").innerHTML = "Chair";
+            var isVisible = document.getElementById("Star3").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star3").style.display = "none";
+            } else {
+                document.getElementById("Star3").style.display = "block";
+            }
+
+        }
+   function Star4() {
+
+         document.getElementById("Instruction").innerHTML = "Door";
+            var isVisible = document.getElementById("Star4").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star4").style.display = "none";
+            } else {
+                document.getElementById("Star4").style.display = "block";
+            }
+
+        }
+
+        function Star5() {
+
+            
+         document.getElementById("Instruction").innerHTML = "Table";
+            var isVisible = document.getElementById("Star5").style.display == "block";
+            if (isVisible) {
+                document.getElementById("Star5").style.display = "none";
+            } else {
+                document.getElementById("Star5").style.display = "block";
+            }
+
+        }
+
+      
+
+        function housepage() {
+            var isVisible = document.getElementById("greeting").style.display == "block";
+            if (isVisible) {
+                document.getElementById("greeting").style.display = "none";
+            } else {
+                document.getElementById("greeting").style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

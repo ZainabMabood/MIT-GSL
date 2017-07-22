@@ -1,0 +1,25 @@
+<html>
+ 
+ <head>
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body   class="Homepage"  >
+<img class=" clickable" src="images/Logo.png" onclick="imageClicked()" style="position: absolute; width:60%;  height:72%; left: 19%"/>
+ 
+
+<img class=" clickable" src="images/Play2.png" onclick="imageClicked()"  style="position: absolute; top: 76%; left: 42%;  height :22%; width:12%"/>
+
+
+    <script src="js/app.js"></script>
+   
+ <script>
+
+        function imageClicked() {
+            localStorage.score = 1;
+            location.href = "Welcome.html"
+        }
+
+      </script>
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    display: flex;
+    flex-direction: column;
+     background-color: #00f9ea;
+   
+}
+.Homepage
+{
+    background-color: #00f9ea;
+}
+
+.title {
+   
+    font-size: 3em;
+ font-family: Calibri;
+    background-color: #FFE738;
+    margin: 10px;
+    padding: 0.1em;
+    border: 3px solid #000000;
+    color: #000000;
+    text-align: center;
+    width: 39%
+}
+
+
+.title2 {
+   
+    font-size: 3em;
+ font-family: Calibri;
+    background-color: #FFE738;
+    margin: 10px;
+    padding: 0.1em;
+    border: 3px solid #000000;
+    color: #000000;
+    text-align: center;
+    width: 41%
+}
+
+
+
+.Roomtitle {
+   
+    font-size: 1.5em;
+ font-family: Calibri;
+    background-color: #FFE738;
+    margin: 10px;
+    padding: 0.2em;
+    border: 3px solid #000000;
+    color: #000000;
+    text-align: center;
+    width: 39%
+}
+.Caption
+{
+    font-family: Calibri;
+    font-size: 1.5em;
+    background-color: #00FF00;
+    margin: 10px;
+    padding: 0.3em;
+    border: 2px solid lightgrey;
+    color: #000000;
+     text-align: center;
+     width: 93%;     
+
+}
+
+
+.ParentCaption
+
+{
+
+     font-family: Calibri;
+    font-size: 1.5em;
+    background-color: #ff6666;
+    margin: 10px;
+    padding: 0.3em;
+    border: 2px solid lightgrey;
+    color: #000000;
+     text-align: center;
+     width: 44%;     
+
+
+}
+.centered {
+    align-self: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+
+ 
+ 
+.rcorners1 {
+    border-radius: 43px;
+}
+
+
+.instructionText {
+    font-size: 1.5em;
+    font-family: Calibri;
+    background-color: #00FF00;
+    margin: 10px;
+    padding: 0.3em;
+    border: 2px solid lightgrey;
+    color: #000000;
+    text-align: center;
+
+       width: 19%;
+}
+
+.Star
+{
+background-color :#ff1a1a;
+margin: 10px;
+    padding: 0.3em;
+    border: 2px solid lightgrey;
+
+      text-align: center;
+
+}
+
+
+.aParent div {
+  float: left;
+  clear: none; 
+}

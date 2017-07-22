@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body>
+
+    <h1 class="title2 centered">Select an age</h1>
+
+    <div>
+        <img class=" clickable" src="images/CAT1.jpg" onclick="Redirect()" style=" width: 20%; height: 25%; position: absolute;  left: 30%;  top: 16% "
+        />
+
+        <div class="instructionText rcorners1" style="
+      top: 41%;
+      left: 29%;
+      position: absolute;
+      z-index: 1;
+      visibility: show;">
+            1 -2 year old
+        </div>
+
+
+        <img class=" clickable" src="images/CAT2.jpg" onclick="Redirect()" style=" width: 20%; height:25% ; position: absolute;  left: 51%; top: 16% "
+        />
+
+
+        <div class="instructionText rcorners1" style="
+      top: 41%;
+      left: 50%;
+      position: absolute;
+      z-index: 1;
+      visibility: show;">
+            3 year old
+        </div>
+
+
+        <img class=" clickable" src="images/CAT3.jpg" onclick="Redirect()" style="width: 20%; height: 25%; position: absolute;  left: 30%;  top: 54%  "
+        />
+
+        <div class="instructionText rcorners1" style="
+      top: 79%;
+      left: 29%;
+      position: absolute;
+      z-index: 1;
+      visibility: show;">
+            4 year old
+        </div>
+        <img class=" clickable" src="images/CAT4.jpg" onclick="Redirect()" style=" width: 20%; height: 25%; position: absolute;  left: 51%; top: 54% "
+        />
+
+        <div class="instructionText rcorners1" style="
+      top: 79%;
+      left: 50%;
+      position: absolute;
+      z-index: 1;
+      visibility: show;">
+            5 year old
+        </div>
+ 
+
+        <div class="instructionText rcorners1" style="
+      top:90%;
+      left: 40%;
+      position: absolute;
+      z-index: 1;
+      visibility: show;">
+       Select an age
+        </div
+
+    </div>
+ 
+
+    
+
+    <script src="js/app.js"></script>
+    <script>
+        function housepage() {
+
+            var audio = new Audio('wav/audiowelcomesong.mp3');
+            audio.play();
+            var isVisible = document.getElementById("greeting").style.display == "block";
+            if (isVisible) {
+                document.getElementById("greeting").style.display = "none";
+            } else {
+                document.getElementById("greeting").style.display = "block";
+            }
+        }
+
+        function housepage() {
+
+            localStorage.score = 1;
+            location.href = "SelectARoom.html"
+        }
+
+        function Redirect() {
+            localStorage.score = 1;
+            location.href = "SelectARoom.html"
+        }
+ 
+    </script>
+</body>
+
+</html>
