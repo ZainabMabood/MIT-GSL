@@ -2,6 +2,13 @@
 
 <head>
     <link rel="stylesheet" href="../../../css/app.css" />
+
+    
+        <script type="text/javascript">
+           var audio = new Audio('../../../wav/Cupboard.mp3');
+            audio.play();
+        </script>
+    
 </head>
 
 <body  Star1() >
@@ -113,7 +120,7 @@
     <script src="js/app.js"></script>
     <script>
         function Star1() {
-             var audio = new Audio('../../../wav/audiowelcomesong.mp3');
+             var audio = new Audio('../../../wav/welldone.mp3');
             audio.play();
 
          document.getElementById("Instruction").innerHTML = "Cupboard";
@@ -129,7 +136,8 @@
         }
 
         function Star2() {
-
+  var audio = new Audio('../../../wav/goodwork.mp3');
+      audio.play();
   document.getElementById("Instruction").innerHTML = "Bed";
             var audio = new Audio('../../../wav/audiowelcomesong.mp3');
             audio.play();
@@ -143,6 +151,8 @@
         }
     function Star3() {
 
+  var audio = new Audio('../../../wav/welldone.mp3');
+    audio.play();
           document.getElementById("Instruction").innerHTML = "Chair";
             var isVisible = document.getElementById("Star3").style.display == "block";
             if (isVisible) {
@@ -153,7 +163,8 @@
 
         }
    function Star4() {
-
+var audio = new Audio('../../../wav/goodwork.mp3');
+  audio.play();
          document.getElementById("Instruction").innerHTML = "Door";
             var isVisible = document.getElementById("Star4").style.display == "block";
             if (isVisible) {
@@ -166,7 +177,8 @@
 
         function Star5() {
 
-            
+          var audio = new Audio('../../../wav/welldone.mp3');
+            audio.play();
          document.getElementById("Instruction").innerHTML = "Table";
             var isVisible = document.getElementById("Star5").style.display == "block";
             if (isVisible) {
