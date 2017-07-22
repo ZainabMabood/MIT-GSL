@@ -2,10 +2,19 @@
 
 <head>
     <link rel="stylesheet" href="./css/app.css" />
+
+
+        <script type="text/javascript">
+           var audio = new Audio('wav/EnterHome.mp3');
+            audio.play();
+        </script>
+    
+
+
 </head>
 
 <body>
-
+ 
     <h1 class="title centered">Welcome to Kiddo-Lingo</h1>
 
 
@@ -34,8 +43,7 @@
     <script>
         function housepage() {
 
-            var audio = new Audio('wav/audiowelcomesong.mp3');
-            audio.play();
+         
             var isVisible = document.getElementById("greeting").style.display == "block";
             if (isVisible) {
                 document.getElementById("greeting").style.display = "none";
