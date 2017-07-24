@@ -65,6 +65,23 @@ body {
 }
 
 
+.Caption2
+{
+    font-size: 1.5em;
+    font-family: Calibri;
+    background-color: #F44336;
+    margin: 10px;
+    padding: 0.3em;
+    border: 2px solid lightgrey;
+    color: #000000;
+    text-align: center;
+
+       width: 19%; 
+
+}
+
+
+
 .ParentCaption
 
 {
@@ -87,6 +104,10 @@ body {
 
 .hidden {
     display: none;
+}
+
+.Show {
+    display: block;
 }
 
 .clickable {
