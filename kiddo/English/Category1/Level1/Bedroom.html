@@ -16,7 +16,7 @@
     <div style="display: block; position: relative; width: 40%;" class="centered">
         <img class="centered" src="../../../images/Bedroom.png" width="100%" height="60%" left="10%">
 
-        <img src="../../../images/Cupboard.png" class="clickable" onclick="Star1(); playaudio()"  style="height :29%; width:18%; position: absolute; top: 29%; left: 60%"
+        <img src="../../../images/Cupboard.png" class="clickable" onclick="Star1()" style="height :29%; width:18%; position: absolute; top: 29%; left: 60%"
         />
         <img src="../../../images/bed.png" class="clickable" onclick="Star2()" style="  height :14%; width:39%; position: absolute; top: 42%; left: 26%"
         />
@@ -39,7 +39,7 @@
 
         </div>
 
-       
+
 
         <div id="Pointer2" class="hidden">
             <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 48%; left: 39% " />
@@ -121,10 +121,8 @@
     </div>
     <script src="js/app.js"></script>
     <script>
-
-        
         function Star1() {
-           
+
 
             document.getElementById("Instruction").innerHTML = "Cupboard";
 
@@ -138,37 +136,20 @@
 
             document.getElementById("Instruction").innerHTML = "Bed";
 
-             
-var audio =  new Audio("../../../wav/welldone.mp3");
-var audio2 = new Audio("../../../wav/welldone.mp3");
-audio2.pause();
-audio.addEventListener("ended", function () {
- audio2.play();
-});
-           
-
-        
-};
- 
-            
-
-      
-
-        function playaudio() {
-
-            var audio = new Audio('../../../wav/bed.mp3');
+            var audio = new Audio('../../../wav/bed1.mp3');
             audio.play();
 
+        };
 
-
-        }
+         
+        
+       
 
         function Star2() {
-            var audio = new Audio('../../../wav/goodwork.mp3');
+            var audio = new Audio('../../../wav/Chair1.mp3');
             audio.play();
 
-            var audio = new Audio('../../../wav/audiowelcomesong.mp3');
-            audio.play();
+         
             var isVisible = document.getElementById("Star2").style.display == "block";
 
             document.getElementById("Star2").style.display = "block";
@@ -181,15 +162,12 @@ audio.addEventListener("ended", function () {
 
             document.getElementById("Instruction").innerHTML = "Chair";
 
-
-            var audio = new Audio('../../../wav/Chair.mp3');
-            audio.play();
+ 
 
         }
         function Star3() {
 
-            var audio = new Audio('../../../wav/welldone.mp3');
-            audio.play();
+         
 
             document.getElementById("Star3").style.display = "block";
 
@@ -201,14 +179,12 @@ audio.addEventListener("ended", function () {
 
             document.getElementById("Instruction").innerHTML = "Window";
 
-            var audio = new Audio('../../../wav/window.mp3');
+            var audio = new Audio('../../../wav/window1.mp3');
             audio.play();
 
         }
         function Star4() {
-            var audio = new Audio('../../../wav/goodwork.mp3');
-            audio.play();
-
+            
             document.getElementById("Star4").style.display = "block";
 
             document.getElementById("Instruction").innerHTML = "Table";
@@ -218,7 +194,7 @@ audio.addEventListener("ended", function () {
             document.getElementById("Pointer5").style.display = "block";
 
             document.getElementById("Instruction").innerHTML = "Table";
-            var audio = new Audio('../../../wav/Table.mp3');
+            var audio = new Audio('../../../wav/Table1.mp3');
             audio.play();
         }
 
@@ -231,9 +207,9 @@ audio.addEventListener("ended", function () {
 
 
 
-             var timer = setTimeout(function() {
-            window.location='../../../Repeatpage.html'
-        }, 3000);
+            var timer = setTimeout(function () {
+                window.location = '../../../Repeatpage.html'
+            }, 3000);
         }
 
         function housepage() {
