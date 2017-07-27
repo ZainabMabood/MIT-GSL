@@ -5,67 +5,84 @@
 
 
     <script type="text/javascript">
-        var audio = new Audio('../../../wav/Cupboard.mp3');
+        var audio = new Audio('../../../wav/Level4/1.mp3');
         audio.play();
     </script>
 
 </head>
 
 <body>
-    <h1 class="Roomtitle centered  ">Bedroom - [Age 1 - 1.5 years]</h1>
+    <h1 class="Roomtitle centered  ">Bedroom - [Age 4 years]</h1>
     <div style="display: block; position: relative; width: 40%;" class="centered">
-        <img class="centered" src="../../../images/Bedroom.png" width="100%" height="60%" left="10%">
-
-        <img src="../../../images/Cupboard.png" class="clickable" onclick="Star1()" style="height :29%; width:18%; position: absolute; top: 29%; left: 60%"
-        />
-        <img src="../../../images/bed.png" class="clickable" onclick="Star2()" style="  height :14%; width:39%; position: absolute; top: 42%; left: 26%"
-        />
-        <img src="../../../images/Chair.png" class="clickable" onclick="Star3()" style=" height :19%;  width:14%; position: absolute; top: 53%; left: 85%"
-        />
-        <img src="../../../images/Door.png" class="clickable" onclick="Star4()" style=" height :32%;  width:15%; position: absolute; top: 18%; left: 0%"
-        />
-        <img src="../../../images/Table.png" class="clickable" onclick="Star5()" style="height :13%;  width:17%; position: absolute; top: 51%; left: 75%"
-        />
 
 
-        <h2 id="Instruction" class="Caption rcorners1 "> Touch the items to get a star </h2>
+
+     <div id="pic1" class="show">
+      <img class="centered" src="../../../images/1.png" width="100%" height="60%" left="10%">
+ 
+        <img id="image1" src="../../../images/ball.png" class="clickable"   style="height :4%; width:5%; position: absolute; top: 52%; left: 47%"
+        />
+        <img id="image2" src="../../../images/GreyTeddy.png" class="clickable" onclick="Star1()" style="  height :3%; width:4%; position: absolute; top: 52%; left: 41%"
+        />
+
+        </div>
+
+
+           <div id="pic2" class=" hidden">
+     <img class="centered" src="../../../images/4.png" width="100%" height="60%" left="10%">
+ 
+        <img  id="image3" src="../../../images/whitecat.png" class="clickable"  style="height :6%; width:11%; position: absolute; top: 43%; left: 49%"
+        />
+        <img  id="image4" src="../../../images/blackcat.png" class="clickable"  style="  height :3%; width:4%; position: absolute; top: 43%; left: 41%"
+        />
+             <img  id="image5" src="../../../images/greenteddy.png" class="clickable" onclick="Star2()" style="  height :10%; width:8%; position: absolute; top: 51%; left: 41%"
+        />
+
+
+  </div>
+
+
+           <div id="pic3" class=" hidden">
+              <img class="centered" src="../../../images/31.png" width="100%" height="60%" left="10%">
+ 
+
+        <img   id="image6" src="../../../images/yellowTB4.png" class="clickable" onclick="Star3()" style="height :13%; width:12%; position: absolute; top: 53%; left: 58%"
+        />
+        <img  id="image7"  src="../../../images/brownteddybear.png" class="clickable"  style="  height :13%; width:11%; position: absolute; top: 53%; left: 25%"
+        />
+            
+
+          </div>
+
+
+           <div id="pic4" class="hidden ">
+
+        
+        <img  class="centered" src="../../../images/4.png" width="100%" height="60%" left="10%">
+ 
+        <img  id="image8" src="../../../images/blueteddy.png" class="clickable" onclick="Star4()" style="height :4%; width:3%; position: absolute; top: 52%; left: 66%"
+        />
+             
+
+          </div>
+
+
+           <div id="pic5" class=" hidden">
+
+     
+        <img  class="centered" src="../../../images/5.png" width="100%" height="60%" left="10%">
+ 
+        <img  id="image9"src="../../../images/blueteddy.png" class="clickable" onclick="Star5()" style="height :4%; width:3%; position: absolute; top: 52%; left: 66%"
+        />
+             
+    </div>
+
+     <h2 id="Instruction" class="Caption rcorners1 "> Touch the items to get a star </h2>
 
         <img src="../../../images/emptyStars.png" style=" display: block; position: relative;width:100%; height:13%; left:-1%; top: 20%; "
         />
 
-
-        <div id="Pointer1" class="show">
-            <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 36%; left: 64% " />
-
-        </div>
-
-
-
-        <div id="Pointer2" class="hidden">
-            <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 48%; left: 39% " />
-
-        </div>
-
-
-        <div id="Pointer3" class="hidden">
-            <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 58%; left: 92% " />
-
-        </div>
-
-
-
-        <div id="Pointer4" class="hidden">
-            <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 36%; left: 4% " />
-
-        </div>
-
-
-        <div id="Pointer5" class="hidden">
-            <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 54%; left: 82% " />
-
-        </div>
-
-
+       
         <div id="SilverStar1">
             <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 0% " />
 
@@ -90,6 +107,40 @@
             <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 80% " />
 
         </div>
+
+
+
+
+
+        
+
+        <div id="Activity1" class="hidden">
+            <img src="../../../images/Star.png" style="width:13%; position: absolute; top: 85%; left: 0%" />
+
+        </div>
+
+
+        <div id="Activity2" class="hidden">
+            <img src="../../../images/Star.png" style="  width:13%; position: absolute; top: 85%; left: 20%" />
+
+        </div>
+
+        <div id="Activity3" class="hidden">
+            <img src="../../../images/Star.png" style="width:13%; position: absolute; top: 85%; left: 40% " />
+
+        </div>
+
+        <div id="Activity4" class="hidden">
+            <img src="../../../images/Star.png" style=" width:13%; position: absolute; top: 85%; left: 60% " />
+
+        </div>
+
+        <div id="Activity5" class="hidden">
+            <img src="../../../images/Star.png" style="  width:13%; position: absolute; top: 85%; left: 80% " />
+
+        </div>
+
+
 
 
 
@@ -124,19 +175,24 @@
         function Star1() {
 
 
+
+
             document.getElementById("Instruction").innerHTML = "Cupboard";
 
             var isVisible = document.getElementById("Star1").style.display == "block";
 
             document.getElementById("Star1").style.display = "block";
 
-            document.getElementById("Pointer1").style.display = "none";
+            document.getElementById("pic1").style.display = "none";
+              document.getElementById("image1").style.display = "none";
 
-            document.getElementById("Pointer2").style.display = "block";
+                document.getElementById("image2").style.display = "none";
 
-            document.getElementById("Instruction").innerHTML = "Bed";
+            document.getElementById("pic2").style.display = "block";
 
-            var audio = new Audio('../../../wav/bed1.mp3');
+            document.getElementById("Instruction").innerHTML = " Find the blue rabbit in front of the cupboard";
+
+            var audio = new Audio('../../../wav/Level4/2.mp3');
             audio.play();
 
         };
@@ -146,7 +202,7 @@
        
 
         function Star2() {
-            var audio = new Audio('../../../wav/Chair1.mp3');
+            var audio = new Audio('../../../wav/Level4/3.mp3');
             audio.play();
 
          
@@ -154,13 +210,17 @@
 
             document.getElementById("Star2").style.display = "block";
 
-            document.getElementById("Pointer2").style.display = "none";
+            document.getElementById("pic2").style.display = "none";
+               document.getElementById("image4").style.display = "none";
 
-            var isVisible = document.getElementById("Pointer3").style.display == "block";
+             document.getElementById("image5").style.display = "none";
+             document.getElementById("image6").style.display = "none";
 
-            document.getElementById("Pointer3").style.display = "block";
+      
 
-            document.getElementById("Instruction").innerHTML = "Chair";
+            document.getElementById("pic3").style.display = "block";
+
+            document.getElementById("Instruction").innerHTML = " Find the two cats and the green teddy bear";
 
  
 
@@ -171,15 +231,18 @@
 
             document.getElementById("Star3").style.display = "block";
 
-            document.getElementById("Pointer3").style.display = "none";
+            document.getElementById("pic3").style.display = "none";
 
             var isVisible = document.getElementById("Pointer4").style.display == "block";
 
-            document.getElementById("Pointer4").style.display = "block";
+                 document.getElementById("pic3").style.display = "none";
+              document.getElementById("image6").style.display = "none";
 
-            document.getElementById("Instruction").innerHTML = "Window";
+                document.getElementById("image7").style.display = "none";
 
-            var audio = new Audio('../../../wav/window1.mp3');
+            document.getElementById("Instruction").innerHTML = " Touch the brown teddy bear then touch the yellow teddy bear";
+
+            var audio = new Audio('../../../wav/Level4/4.mp3');
             audio.play();
 
         }
@@ -189,12 +252,13 @@
 
             document.getElementById("Instruction").innerHTML = "Table";
 
-            document.getElementById("Pointer4").style.display = "none";
+            document.getElementById("pic4").style.display = "block";
+             document.getElementById("image8").style.display = "none";
 
-            document.getElementById("Pointer5").style.display = "block";
+            document.getElementById("pic5").style.display = "block";
 
-            document.getElementById("Instruction").innerHTML = "Table";
-            var audio = new Audio('../../../wav/Table1.mp3');
+            document.getElementById("Instruction").innerHTML = "Touch the rabbit under the bed and the white cat-1";
+            var audio = new Audio('../../../wav/Level4/5.mp3');
             audio.play();
         }
 
@@ -204,6 +268,7 @@
             audio.play();
 
             document.getElementById("Star5").style.display = "block";
+             document.getElementById("image9").style.display = "none";
 
 
 

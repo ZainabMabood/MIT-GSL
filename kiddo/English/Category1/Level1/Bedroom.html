@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <h1 class="Roomtitle centered  ">Bedroom - [Age 4 years]</h1>
+    <h1 class="Roomtitle centered  ">Bedroom - [Age 1-2 years]</h1> 
     <div style="display: block; position: relative; width: 40%;" class="centered">
         <img class="centered" src="../../../images/Bedroom.png" width="100%" height="60%" left="10%">
 
@@ -27,46 +27,35 @@
         <img src="../../../images/Table.png" class="clickable" onclick="Star5()" style="height :13%;  width:17%; position: absolute; top: 51%; left: 75%"
         />
 
-
         <h2 id="Instruction" class="Caption rcorners1 "> Touch the items to get a star </h2>
 
         <img src="../../../images/emptyStars.png" style=" display: block; position: relative;width:100%; height:13%; left:-1%; top: 20%; "
         />
 
-
-        
         <div id="Pointer1" class="show">
             <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 36%; left: 64% " />
 
         </div>
-
-
 
         <div id="Pointer2" class="hidden">
             <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 48%; left: 39% " />
 
         </div>
 
-
         <div id="Pointer3" class="hidden">
             <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 58%; left: 92% " />
 
         </div>
-
-
 
         <div id="Pointer4" class="hidden">
             <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 36%; left: 4% " />
 
         </div>
 
-
         <div id="Pointer5" class="hidden">
             <img src="../../../images/Pointer.png" style=" width:7%; position: absolute; top: 54%; left: 82% " />
 
         </div>
-
-      
 
         <div id="SilverStar1">
             <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 0% " />
@@ -92,8 +81,6 @@
             <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 80% " />
 
         </div>
-
-
 
         <div id="Star1" class="hidden">
             <img src="../../../images/Star.png" style="width:13%; position: absolute; top: 85%; left: 0%" />
@@ -125,7 +112,6 @@
     <script>
         function Star1() {
 
-
             document.getElementById("Instruction").innerHTML = "Cupboard";
 
             var isVisible = document.getElementById("Star1").style.display == "block";
@@ -143,15 +129,10 @@
 
         };
 
-         
-        
-       
-
         function Star2() {
             var audio = new Audio('../../../wav/Chair1.mp3');
             audio.play();
 
-         
             var isVisible = document.getElementById("Star2").style.display == "block";
 
             document.getElementById("Star2").style.display = "block";
@@ -163,13 +144,8 @@
             document.getElementById("Pointer3").style.display = "block";
 
             document.getElementById("Instruction").innerHTML = "Chair";
-
- 
-
         }
         function Star3() {
-
-         
 
             document.getElementById("Star3").style.display = "block";
 
@@ -183,7 +159,6 @@
 
             var audio = new Audio('../../../wav/window1.mp3');
             audio.play();
-
         }
         function Star4() {
             
@@ -199,21 +174,16 @@
             var audio = new Audio('../../../wav/Table1.mp3');
             audio.play();
         }
-
         function Star5() {
-
             var audio = new Audio('../../../wav/welldone.mp3');
             audio.play();
 
             document.getElementById("Star5").style.display = "block";
 
-
-
             var timer = setTimeout(function () {
                 window.location = '../../../RewardPage.html'
             }, 1500);
         }
-
         function housepage() {
             var isVisible = document.getElementById("greeting").style.display == "block";
             if (isVisible) {
