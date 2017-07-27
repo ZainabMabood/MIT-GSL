@@ -3,24 +3,21 @@
 <head>
     <link rel="stylesheet" href="./css/app.css" />
 
-    
-  
-    
+
 </head>
 
 <body>
 
-    <h1 class="title2 centered ">Congratulations!<br>You won a sticker</br> </h1>
+    <h1 class="title2 centered ">Congratulations!<br>You won a sticker</br>
+    </h1>
 
     <div>
-        <img   src="images/Rewards.png"  style=" width: 42%; height: 58%; position: absolute;  left: 29%;  top: 27%"
-        />
+        <img src="images/Rewards.png" style=" width: 42%; height: 58%; position: absolute;  left: 29%;  top: 27%" />
 
-          <img   src="images/Rewardcoloured.png"  style=" width: 25%; height: 34%; position: absolute;  left: 27%;  top: 24%"
-        />
+        <img src="images/Rewardcoloured.png" style=" width: 25%; height: 34%; position: absolute;  left: 27%;  top: 24%" />
 
 
-      
+
         <div class="instructionText clickable " style="
       top:85%;
       left: 28%;
@@ -28,53 +25,36 @@
       position: absolute;
       z-index: 1;
       visibility: show;" onclick=" housepage()">
-      click here to win more stickers
-        </div
-    <script src="js/app.js"></script>
-    <script>
+            click here to win more stickers
+        </div <script src="js/app.js"></script>
+        <script>
+            function housepage() {
 
-
-        
-         
-        function housepage() {
-
-            var audio = new Audio('wav/audiowelcomesong.mp3');
-            audio.play();
-            var isVisible = document.getElementById("greeting").style.display == "block";
-            if (isVisible) {
-                document.getElementById("greeting").style.display = "none";
-            } else {
-                document.getElementById("greeting").style.display = "block";
+                localStorage.score = 1;
+                location.href = "Age4Room.html"
             }
-        }
 
-        function housepage() {
+            function RedirectBathroom() {
+                localStorage.score = 1;
+                location.href = "English/Category1/Level1/Bathroom.html"
+            }
 
-            localStorage.score = 1;
-            location.href = "Repeatpage.html"
-        }
+            function RedirectSittingRoom() {
+                localStorage.score = 1;
+                location.href = "English/Category1/Level1/Lounge.html"
+            }
 
-        function RedirectBathroom() {
-            localStorage.score = 1;
-            location.href = "English/Category1/Level1/Bathroom.html"
-        }
+            function RedirectBedroom() {
+                localStorage.score = 1;
+                location.href = "English/Category1/Level1/Bedroom.html"
+            }
 
-        function RedirectSittingRoom() {
-            localStorage.score = 1;
-            location.href = "English/Category1/Level1/Lounge.html"
-        }
 
-        function RedirectBedroom() {
-            localStorage.score = 1;
-            location.href = "English/Category1/Level1/Bedroom.html"
-        }
-
-        
-        function RedirectKitchen() {
-            localStorage.score = 1;
-            location.href = "English/Category1/Level1/Kitchen.html"
-        }
-    </script>
+            function RedirectKitchen() {
+                localStorage.score = 1;
+                location.href = "English/Category1/Level1/Kitchen.html"
+            }
+        </script>
 </body>
 
 </html>
