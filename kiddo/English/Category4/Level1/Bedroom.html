@@ -15,8 +15,6 @@
     <h1 class="Roomtitle centered  ">Bedroom - [Age 4 years]</h1>
     <div style="display: block; position: relative; width: 40%;" class="centered">
 
-
-
         <div id="pic1" class="show">
             <img class="centered" src="../../../images/1.png" width="100%" height="60%" left="10%">
 
@@ -26,7 +24,6 @@
             />
 
         </div>
-
 
         <div id="pic2" class=" hidden">
             <img class="centered" src="../../../images/4.png" width="100%" height="60%" left="10%">
@@ -38,9 +35,7 @@
             <img id="image5" src="../../../images/greenteddy.png" class="clickable" onclick="Star2()" style="  height :11%; width:8%; position: absolute; top: 53%; left: 41%"
             />
 
-
         </div>
-
 
         <div id="pic3" class=" hidden">
             <img class="centered" src="../../../images/31.png" width="100%" height="60%" left="10%">
@@ -54,7 +49,6 @@
 
         </div>
 
-
         <div id="pic4" class="hidden ">
 
 
@@ -66,9 +60,7 @@
 
         </div>
 
-
         <div id="pic5" class=" hidden">
-
 
             <img class="centered" src="../../../images/5.png" width="100%" height="60%" left="10%">
             <img src="../../../images/GreyTeddy.png" class="clickable" style="  height :4%; width:4%; position: absolute; top: 56%; left: 34%"
@@ -76,30 +68,79 @@
 
             <img id="image9" src="../../../images/whitecat.png" class="clickable" onclick="Star5()" style="height :7%; width:11%; position: absolute; top: 44%; left: 49%"
             />
+        </div>
 
+        <div id="instruction1" class="aParent show">
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width: 150%; top:35%; left:-10%">Ball</h2>
+            </div>
+
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width:150%; top:40%; left:35%">Grey Rabbit</h2>
+            </div>
+
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width: 135%; top:40%; left:170%">Table</h2>
+            </div>
+
+               </div>
+  
+
+
+
+        <div id="instruction2" class="aParent hidden">
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width: 180%; top:35%; left:-10%">Two Cats </h2>
+
+            </div>
+
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width:120%; top:40%; left:57%">Green TeddyBear</h2>
+
+            </div>
 
         </div>
 
-<div class="aParent">
-        <div>
-     <h2 class="ParentCaption clickable " onclick="Instructionpage()" style="  position: relative; width: 180%; top:35%; left:-10%">Two Cats </h2>
-   
+        <div id="instruction3" class="aParent hidden">
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width: 120%; top:35%; left:-7%">Brown TeddyBear </h2>
+
+            </div>
+
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width:105%; top:40%; left:37%">Yellow TeddyBear</h2>
+
+            </div>
         </div>
 
-        <div>
-            <h2 class="ParentCaption clickable " onclick="ProgressPage()"style="  position: relative; width:120%; top:40%; left:57%">Green Teddy Bear</h2>
-    
+
+        <div id="instruction4" class="aParent hidden">
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width: 180%; top:35%; left:-10%"> Blue rabbit </h2>
+
+            </div>
+
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width:190%; top:50%; left:70%">Cupboard</h2>
+
+            </div>
         </div>
- 
-       
-    </div>
- 
-   
+
+        <div id="instruction5" class="aParent hidden">
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width: 210%; top:35%; left:-10%"> Rabbit </h2>
+
+            </div>
+
+            <div>
+                <h2 class="ParentCaption clickable " style="  position: relative; width:190%; top:50%; left:100%"> White Cat</h2>
+
+            </div>
+        </div>
 
         <img src="../../../images/emptyStars.png" style=" display: block; position: relative;width:100%; height:13%; left:-1%; top: 20%; "
         />
-
-
+ 
         <div id="SilverStar1">
             <img src="../../../images/SilverStar.png" style=" width:13%; position: absolute; top: 85%; left: 0% " />
 
@@ -181,15 +222,13 @@
 
         </div>
     </div>
+
+
+
     <script src="js/app.js"></script>
     <script>
         function Star1() {
-
-
-
-
-            document.getElementById("Instruction").innerHTML = "Cupboard";
-
+ 
             var isVisible = document.getElementById("Star1").style.display == "block";
 
             document.getElementById("Star1").style.display = "block";
@@ -201,7 +240,9 @@
 
             document.getElementById("pic2").style.display = "block";
 
-            document.getElementById("Instruction").innerHTML = "Two Cats - Green Teddy Bear";
+             document.getElementById("instruction1").style.display = "none";
+
+            document.getElementById("instruction2").style.display = "block";
 
             var audio = new Audio('../../../wav/Level4/2.mp3');
             audio.play();
@@ -214,9 +255,7 @@
             var audio = new Audio('../../../wav/Level4/3.mp3');
             audio.play();
 
-            var isVisible = document.getElementById("Star2").style.display == "block";
-
-            document.getElementById("Star2").style.display = "block";
+               document.getElementById("Star2").style.display = "block";
 
             document.getElementById("pic2").style.display = "none";
             document.getElementById("image4").style.display = "none";
@@ -225,7 +264,9 @@
 
             document.getElementById("pic3").style.display = "block";
 
-            document.getElementById("Instruction").innerHTML = "Brown Teddy Bear- Yellow Teddy Bear- Window ";
+   document.getElementById("instruction2").style.display = "none";
+
+ document.getElementById("instruction3").style.display = "block";
 
         }
         function Star3() {
@@ -238,8 +279,9 @@
             document.getElementById("image7").style.display = "none";
 
             document.getElementById("pic4").style.display = "block";
+               document.getElementById("instruction3").style.display = "none";
 
-            document.getElementById("Instruction").innerHTML = "Blue rabbit - Cupboard";
+ document.getElementById("instruction4").style.display = "block";
 
             var audio = new Audio('../../../wav/Level4/4.mp3');
             audio.play();
@@ -253,7 +295,12 @@
             document.getElementById("pic4").style.display = "none";
             document.getElementById("pic5").style.display = "block";
 
-            document.getElementById("Instruction").innerHTML = "Rabbitand - White Cat";
+
+
+     document.getElementById("instruction4").style.display = "none";
+
+ document.getElementById("instruction5").style.display = "block";
+
             var audio = new Audio('../../../wav/Level4/5.mp3');
             audio.play();
         }
